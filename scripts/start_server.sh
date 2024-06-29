@@ -9,7 +9,7 @@ cd /home/ubuntu/befive/companywebsite
 sudo npm install -g pm2
 
 # Start the Next.js application using PM2
-pm2 start npm --name "befive" -- run start -- -p 3000
+pm2 start npm --name "companywebsite" -- run start -- -p 3000
 
 sleep 5
 if ! pgrep -f "pm2" > /dev/null; then

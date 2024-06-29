@@ -11,3 +11,8 @@ sudo npm install -g pm2
 # Start the Next.js application using PM2
 pm2 start npm --name "befive" -- run start -- -p 3000
 
+sleep 5
+if ! pgrep -f "pm2" > /dev/null; then
+    echo "PM2 failed to start the application"
+    exit 1
+fi

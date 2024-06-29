@@ -3,7 +3,7 @@
 export PATH=$PATH:/usr/local/bin
 
 # Navigate to the project directory
-cd /home/ubuntu/befive
+cd /home/ubuntu/befive/companywebsite
 
 # Install PM2 globally
 sudo npm install -g pm2

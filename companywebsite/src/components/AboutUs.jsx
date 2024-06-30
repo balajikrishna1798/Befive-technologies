@@ -47,9 +47,7 @@ const About = () => {
           <div className={`space-y-8 transition-opacity duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
             <h3 className="text-2xl font-semibold">Our Values</h3>
             <p className="text-lg">We believe in innovation, excellence, and providing value to our clients. Our team is committed to driving digital transformation and ensuring our clients achieve their technological goals.</p>
-            <h3 className="text-2xl font-semibold">Our Experience</h3>
-            <p className="text-lg">With years of experience in the software development industry, we have successfully delivered numerous projects across various domains. Our expertise spans across business management software, IT consulting, custom software development, and mobile app development.</p>
-          </div>
+            </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useRef, useState } from 'react';
 
 const Experience = () => {
@@ -56,7 +56,7 @@ const Experience = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           <div className={`space-y-8 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
             <h3 className="text-2xl font-semibold">Areas of Expertise</h3>
-            <ul className="list-disc list-inside space-y-2">
+            <ul className="custom-list space-y-2">
               {points.slice(0, 4).map((point, index) => (
                 <li key={index} className="text-lg">{point}</li>
               ))}
@@ -64,7 +64,7 @@ const Experience = () => {
           </div>
           <div className={`space-y-8 transition-opacity duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
             <h3 className="text-2xl font-semibold">Specialized Services</h3>
-            <ul className="list-disc list-inside space-y-2">
+            <ul className="custom-list space-y-2">
               {points.slice(4).map((point, index) => (
                 <li key={index} className="text-lg">{point}</li>
               ))}

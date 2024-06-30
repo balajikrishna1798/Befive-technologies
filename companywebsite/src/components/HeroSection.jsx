@@ -21,7 +21,7 @@ const Hero = () => {
             leaveTo="opacity-0"
           >
             <div className="text-white">
-              <h1 className="text-5xl lg:text-6xl font-bold mb-4">
+              <h1 className="text-5xl font-bold mb-4">
                 Cost-Benefit Optimization
               </h1>
               <p className="text-2xl lg:text-4xl mb-6">

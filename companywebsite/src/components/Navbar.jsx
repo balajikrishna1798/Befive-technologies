@@ -10,20 +10,17 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className=" text-black shadow-lg">
+    <nav className="bg-white text-black shadow-lg sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center p-6">
         <div className="flex items-center">
-          
           <div className="text-2xl font-bold">Befive Technologies</div>
         </div>
         <div className="hidden md:flex space-x-6">
-          <a href="#services" className="hover:text-gray-200 transition-colors duration-200">Our Services</a>
-          <a href="#about" className="hover:text-gray-200 transition-colors duration-200">About Us</a>
-          <a href="#contact" className="hover:text-gray-200 transition-colors duration-200">Technologies</a>
-          <a href="#experience" className="hover:text-gray-200 transition-colors duration-200">Experience</a>
-
-          <a href="#technologies" className="hover:text-gray-200 transition-colors duration-200">Contact Us</a>
-
+          <a href="#services" className="hover:text-gray-200 font-bold transition-colors duration-200 text-green-800">Our Services</a>
+          <a href="#about" className="hover:text-gray-200 font-bold transition-colors duration-200 text-green-800">About Us</a>
+          <a href="#experience" className="hover:text-gray-200 font-bold transition-colors duration-200 text-green-800">Experience</a>
+          <a href="#technologies" className="hover:text-gray-200 font-bold transition-colors duration-200 text-green-800">Technologies</a>
+          <a href="#contact" className="hover:text-gray-200 font-bold transition-colors duration-200 text-green-800">Contact Us</a>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMobileMenu} className="focus:outline-none">
@@ -46,12 +43,11 @@ export const Navbar = () => {
       >
         <div className="fixed inset-0 bg-black opacity-50" onClick={toggleMobileMenu}></div>
         <div className="relative bg-green-600 w-64 space-y-6 py-7 px-2">
-          <a href="#services" className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200">Our Services</a>
-          <a href="#about" className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200">About Us</a>
-          <a href="#contact" className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200">Experience</a>
-          <a href="#contact" className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200">Technologies</a>
-          <a href="#contact" className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200">Contact Us</a>
-
+          <a href="#services" className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200" onClick={toggleMobileMenu}>Our Services</a>
+          <a href="#about" className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200" onClick={toggleMobileMenu}>About Us</a>
+          <a href="#experience" className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200" onClick={toggleMobileMenu}>Experience</a>
+          <a href="#technologies" className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200" onClick={toggleMobileMenu}>Technologies</a>
+          <a href="#contact" className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200" onClick={toggleMobileMenu}>Contact Us</a>
         </div>
       </Transition>
     </nav>

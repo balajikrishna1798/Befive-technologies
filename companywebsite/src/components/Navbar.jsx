@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
+import { Link } from 'react-scroll';
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,11 +17,11 @@ export const Navbar = () => {
           <div className="text-2xl font-bold">Befive Technologies</div>
         </div>
         <div className="hidden md:flex space-x-6">
-          <a href="#services" className="hover:text-gray-200 font-bold transition-colors duration-200 text-green-800">Our Services</a>
-          <a href="#about" className="hover:text-gray-200 font-bold transition-colors duration-200 text-green-800">About Us</a>
-          <a href="#experience" className="hover:text-gray-200 font-bold transition-colors duration-200 text-green-800">Experience</a>
-          <a href="#technologies" className="hover:text-gray-200 font-bold transition-colors duration-200 text-green-800">Technologies</a>
-          <a href="#contact" className="hover:text-gray-200 font-bold transition-colors duration-200 text-green-800">Contact Us</a>
+          <Link to="services" smooth={true} duration={500} className="hover:text-gray-200 font-bold transition-colors duration-200 cursor-pointer text-green-800">Our Services</Link>
+          <Link to="about" smooth={true} duration={500} className="hover:text-gray-200 font-bold transition-colors duration-200 cursor-pointer text-green-800">About Us</Link>
+          <Link to="experience" smooth={true} duration={500} className="hover:text-gray-200 font-bold transition-colors duration-200 cursor-pointer text-green-800">Experience</Link>
+          <Link to="technologies" smooth={true} duration={500} className="hover:text-gray-200 font-bold transition-colors duration-200 cursor-pointer text-green-800">Technologies</Link>
+          <Link to="contact" smooth={true} duration={500} className="hover:text-gray-200 font-bold transition-colors duration-200 cursor-pointer text-green-800">Contact Us</Link>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMobileMenu} className="focus:outline-none">
@@ -43,11 +44,11 @@ export const Navbar = () => {
       >
         <div className="fixed inset-0 bg-black opacity-50" onClick={toggleMobileMenu}></div>
         <div className="relative bg-green-600 w-64 space-y-6 py-7 px-2">
-          <a href="#services" className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200" onClick={toggleMobileMenu}>Our Services</a>
-          <a href="#about" className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200" onClick={toggleMobileMenu}>About Us</a>
-          <a href="#experience" className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200" onClick={toggleMobileMenu}>Experience</a>
-          <a href="#technologies" className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200" onClick={toggleMobileMenu}>Technologies</a>
-          <a href="#contact" className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200" onClick={toggleMobileMenu}>Contact Us</a>
+          <Link to="services" smooth={true} duration={500} className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200 cursor-pointer" onClick={toggleMobileMenu}>Our Services</Link>
+          <Link to="about" smooth={true} duration={500} className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200 cursor-pointer" onClick={toggleMobileMenu}>About Us</Link>
+          <Link to="experience" smooth={true} duration={500} className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200 cursor-pointer" onClick={toggleMobileMenu}>Experience</Link>
+          <Link to="technologies" smooth={true} duration={500} className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200 cursor-pointer" onClick={toggleMobileMenu}>Technologies</Link>
+          <Link to="contact" smooth={true} duration={500} className="block px-4 py-2 text-white hover:bg-green-700 transition-colors duration-200 cursor-pointer" onClick={toggleMobileMenu}>Contact Us</Link>
         </div>
       </Transition>
     </nav>

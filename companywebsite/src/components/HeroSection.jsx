@@ -62,25 +62,30 @@ const Hero = () => {
             d="M0,192L48,208C96,224,192,256,288,256C384,256,480,224,576,218.7C672,213,768,235,864,213.3C960,192,1056,128,1152,112C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
         </svg>
-        <div className="bg-gradient-to-r from-yellow-300 via-red-300 to-pink-300 py-24">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid lg:grid-cols-3 gap-8 items-start">
-              <div className="lg:col-span-1 space-y-6">
-                <h2 className="text-3xl font-bold">Our Services</h2>
-                <p className="text-xl">
-                  Innovative Software Solutions for Better Results
-                </p>
-                <p className="text-lg">
-                  Empowering digital transformation of your business with our
-                  software development services.
-                </p>
-              </div>
-              <div className="lg:col-span-2">
-                <Services />
-              </div>
-            </div>
-          </div>
-        </div>
+        <div className="relative py-24 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600" id="services">
+  <div className="absolute inset-0">
+    <div className="relative h-full">
+      <div className="absolute inset-0 bg-yellow-300 rounded-full w-3/4 h-3/4 -top-24 -left-24 z-0 opacity-50"></div>
+    </div>
+  </div>
+  <div className="relative max-w-6xl mx-auto px-6 z-10">
+    <div className="grid lg:grid-cols-3 gap-8 items-start">
+      <div className="lg:col-span-1 space-y-6">
+        <h2 className="text-3xl font-bold text-white">Our Services</h2>
+        <p className="text-xl text-white">
+          Innovative Software Solutions for Better Results
+        </p>
+        <p className="text-lg text-white">
+          Empowering digital transformation of your business with our software development services.
+        </p>
+      </div>
+      <div className="lg:col-span-2">
+        <Services />
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
   );
